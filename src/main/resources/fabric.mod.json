@@ -4,13 +4,13 @@
   "version": "${version}",
 
   "name": "Vanilla Claws",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Mod adds vanilla style claws",
   "authors": [
     "Theone_ss and PinkGoosik"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Theoness1/vanilla-claws"
   },
 
   "license": "MIT",
