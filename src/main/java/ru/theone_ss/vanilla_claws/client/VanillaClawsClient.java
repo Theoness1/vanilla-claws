@@ -12,7 +12,8 @@ public class VanillaClawsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        TwoModelsItemRegistry.register(VanillaClawsItems.DIAMOND_CLAWS);
+        TwoModelsItemRegistry.register(VanillaClawsItems.NETHERITE_CLAWS, VanillaClawsItems.DIAMOND_CLAWS, VanillaClawsItems.IRON_CLAWS, VanillaClawsItems.GOLDEN_CLAWS
+                , VanillaClawsItems.COPPER_CLAWS, VanillaClawsItems.STONE_CLAWS, VanillaClawsItems.WOODEN_CLAWS);
 
         ModelLoadingRegistry.INSTANCE.registerModelProvider((manager, out) -> TwoModelsItemRegistry.ENTRIES.forEach((id, item) ->
                 out.accept(new ModelIdentifier(id + "_in_hand#inventory"))

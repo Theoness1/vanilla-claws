@@ -15,7 +15,13 @@ public class VanillaClawsItems {
 
     public static final Map<Identifier, Item> ITEMS = new LinkedHashMap<>();
 
+    public static final Item NETHERITE_CLAWS = add("netherite_claws", new ClawsItem(ToolMaterials.NETHERITE, 3, 3, settings()));
     public static final Item DIAMOND_CLAWS = add("diamond_claws", new ClawsItem(ToolMaterials.DIAMOND, 3, 3, settings()));
+    public static final Item IRON_CLAWS = add("iron_claws", new ClawsItem(ToolMaterials.IRON, 3, 3, settings()));
+    public static final Item GOLDEN_CLAWS = add("golden_claws", new ClawsItem(ToolMaterials.GOLD, 3, 3, settings()));
+    public static final Item COPPER_CLAWS = add("copper_claws", new ClawsItem(ToolMaterials.STONE, 3, 3, settings()));
+    public static final Item STONE_CLAWS = add("stone_claws", new ClawsItem(ToolMaterials.STONE, 3, 3, settings()));
+    public static final Item WOODEN_CLAWS = add("wooden_claws", new ClawsItem(ToolMaterials.WOOD, 3, 3, settings()));
 
     private static Item add(String name, Item item) {
         ITEMS.put(new Identifier("vanilla_claws", name), item);

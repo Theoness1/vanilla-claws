@@ -1,0 +1,6 @@
+{
+  "parent": "vanilla_claws:item/claws_model",
+  "textures": {
+    "0": "vanilla_claws:item/netherite_claws_in_hand"
+  }
+}
