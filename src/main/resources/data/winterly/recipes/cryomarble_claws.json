@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "vanilla_claws:iron_claws"
+  },
+  "addition": {
+    "item": "winterly:cryomarble"
+  },
+  "result": {
+    "item": "vanilla_claws:cryomarble_claws"
+  }
+}

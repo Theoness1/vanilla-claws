@@ -11,11 +11,11 @@ import java.util.function.Supplier;
 public enum VanillaClawsMaterial implements ToolMaterial {
 
     WOOD(0, 79, 2.0F, 0.0F, 1, () -> Ingredient.fromTag(ItemTags.PLANKS)),
-    STONE(1, 161, 4.0F, 0.0F, 1, () -> Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS)),
-    COPPER(1, 231, 2.0F, 0.0F, 1, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
-    IRON(2, 320, 6.0F, 0.0F, 1, () -> Ingredient.ofItems(Items.IRON_INGOT)),
-    DIAMOND(3, 761, 8.0F, 2.0F, 1, () -> Ingredient.ofItems(Items.DIAMOND)),
-    GOLD(0, 62, 12.0F, 0.0F, 100, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
+    STONE(0, 161, 4.0F, 0.0F, 1, () -> Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS)),
+    COPPER(0, 231, 2.0F, 0.0F, 1, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
+    IRON(0, 320, 6.0F, 0.0F, 1, () -> Ingredient.ofItems(Items.IRON_INGOT)),
+    DIAMOND(0, 761, 8.0F, 2.0F, 1, () -> Ingredient.ofItems(Items.DIAMOND)),
+    GOLD(0, 62, 12.0F, 0.0F, 26, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
     NETHERITE(0, 1131, 9.0F, 2.0F, 1, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
 
     private final int miningLevel;

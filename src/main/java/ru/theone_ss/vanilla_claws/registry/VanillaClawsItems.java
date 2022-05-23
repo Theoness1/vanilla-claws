@@ -26,7 +26,7 @@ public class VanillaClawsItems {
     public static final Item STONE_CLAWS = add("stone_claws", new ClawsItem(VanillaClawsMaterial.STONE, 3, 2, settings()));
     public static final Item WOODEN_CLAWS = add("wooden_claws", new ClawsItem(VanillaClawsMaterial.WOOD, 2, 2, settings()));
 
-    public static final Item CRYOMABLE_CLAWS = add("cryomable_claws", new ClawsItem(getMaterial("winterly"), 3, 2, settings("winterly")));
+    public static final Item CRYOMARBLE_CLAWS = add("cryomarble_claws", new ClawsItem(getMaterial("winterly"), 3, 2, settings("winterly")));
 
     private static ToolMaterial getMaterial(String modId){
 
