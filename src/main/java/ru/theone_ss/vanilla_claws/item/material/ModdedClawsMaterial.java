@@ -5,16 +5,18 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Lazy;
+import ru.tlmclub.winterly.registry.WinterlyItems;
 
 import java.util.function.Supplier;
 
-public enum VanillaClawsMaterial implements ToolMaterial {
+public enum ModdedClawsMaterial implements ToolMaterial {
+
 
     WOOD(0, 79, 2.0F, 0.0F, 1, () -> Ingredient.fromTag(ItemTags.PLANKS)),
     STONE(1, 161, 4.0F, 0.0F, 1, () -> Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS)),
     COPPER(1, 231, 2.0F, 0.0F, 1, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
     IRON(2, 320, 6.0F, 0.0F, 1, () -> Ingredient.ofItems(Items.IRON_INGOT)),
-    DIAMOND(3, 761, 8.0F, 2.0F, 1, () -> Ingredient.ofItems(Items.DIAMOND)),
+    CRYOMARBLE(3, 761, 8.0F, 2.0F, 1, () -> Ingredient.ofItems(WinterlyItems.CRYOMARBLE)),
     GOLD(0, 62, 12.0F, 0.0F, 100, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
     NETHERITE(0, 1131, 9.0F, 2.0F, 1, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
 
@@ -25,7 +27,7 @@ public enum VanillaClawsMaterial implements ToolMaterial {
     private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
 
-    VanillaClawsMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    ModdedClawsMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

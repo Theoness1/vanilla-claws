@@ -12,6 +12,10 @@ repositories {
 		url "https://api.modrinth.com/maven"
 		content { includeGroup "maven.modrinth" }
 	}
+
+	maven { url "https://maven.terraformersmc.com/" }
+
+	maven { url "https://ladysnake.jfrog.io/artifactory/mods" }
 }
 
 dependencies {
@@ -21,7 +25,9 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	modImplementation "maven.modrinth:winterly:0.6.0"
-	modImplementation "maven.modrinth:trinkets:3.3.1"
+	modImplementation "dev.emi:trinkets:3.3.1"
+	modImplementation "maven.modrinth:cloth-config:6.2.57+fabric"
+
 
 	modLocalRuntime "maven.modrinth:lazydfu:0.1.2"
 	modLocalRuntime "maven.modrinth:ferrite-core:4.2.0"

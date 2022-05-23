@@ -7,14 +7,14 @@
   ],
   "key": {
     "i": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:iron_ingot"
     },
     "L": {
       "item": "minecraft:leather"
     }
   },
   "result": {
-    "item": "vanilla_claws:diamond_claws",
+    "item": "vanilla_claws:iron_claws",
     "count": 1
   }
 }

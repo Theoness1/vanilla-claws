@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "LLL",
+    " L "
+  ],
+  "key": {
+    "i": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "vanilla_claws:stone_claws",
+    "count": 1
+  }
+}
