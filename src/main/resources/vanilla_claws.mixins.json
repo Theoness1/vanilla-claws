@@ -4,6 +4,7 @@
   "package": "ru.theone_ss.vanilla_claws.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "common.ShieldMixin"
   ],
   "client": [
     "client.ItemRendererMixin"
