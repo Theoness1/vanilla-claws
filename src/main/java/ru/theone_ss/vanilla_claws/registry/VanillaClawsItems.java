@@ -18,15 +18,15 @@ public class VanillaClawsItems {
 
     public static final Map<Identifier, Item> ITEMS = new LinkedHashMap<>();
 
-    public static final Item NETHERITE_CLAWS = add("netherite_claws", new ClawsItem(VanillaClawsMaterial.NETHERITE, 4, 2, settings()));
-    public static final Item DIAMOND_CLAWS = add("diamond_claws", new ClawsItem(VanillaClawsMaterial.DIAMOND, 3, 2, settings()));
-    public static final Item IRON_CLAWS = add("iron_claws", new ClawsItem(VanillaClawsMaterial.IRON, 4, 2, settings()));
-    public static final Item GOLDEN_CLAWS = add("golden_claws", new ClawsItem(VanillaClawsMaterial.GOLD, 3, 2, settings()));
-    public static final Item COPPER_CLAWS = add("copper_claws", new ClawsItem(VanillaClawsMaterial.COPPER, 2, 2, settings()));
-    public static final Item STONE_CLAWS = add("stone_claws", new ClawsItem(VanillaClawsMaterial.STONE, 3, 2, settings()));
-    public static final Item WOODEN_CLAWS = add("wooden_claws", new ClawsItem(VanillaClawsMaterial.WOOD, 2, 2, settings()));
+    public static final Item NETHERITE_CLAWS = add("netherite_claws", new ClawsItem(VanillaClawsMaterial.NETHERITE, 5, 2, settings()));
+    public static final Item DIAMOND_CLAWS = add("diamond_claws", new ClawsItem(VanillaClawsMaterial.DIAMOND, 4, 2, settings()));
+    public static final Item IRON_CLAWS = add("iron_claws", new ClawsItem(VanillaClawsMaterial.IRON, 5, 2, settings()));
+    public static final Item GOLDEN_CLAWS = add("golden_claws", new ClawsItem(VanillaClawsMaterial.GOLD, 4, 2, settings()));
+    public static final Item COPPER_CLAWS = add("copper_claws", new ClawsItem(VanillaClawsMaterial.COPPER, 3, 2, settings()));
+    public static final Item STONE_CLAWS = add("stone_claws", new ClawsItem(VanillaClawsMaterial.STONE, 4, 2, settings()));
+    public static final Item WOODEN_CLAWS = add("wooden_claws", new ClawsItem(VanillaClawsMaterial.WOOD, 3, 2, settings()));
 
-    public static final Item CRYOMARBLE_CLAWS = add("cryomarble_claws", new ClawsItem(getMaterial("winterly"), 3, 2, settings("winterly")));
+    public static final Item CRYOMARBLE_CLAWS = add("cryomarble_claws", new ClawsItem(getMaterial("winterly"), 4, 2, settings("winterly")));
 
     private static ToolMaterial getMaterial(String modId){
 
