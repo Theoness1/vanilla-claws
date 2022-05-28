@@ -1,6 +1,5 @@
 package ru.theone_ss.vanilla_claws.client;
 
-
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.item.Item;
@@ -12,7 +11,6 @@ import java.util.Map;
 
 @Environment(EnvType.CLIENT)
 public class TwoModelsItemRegistry {
-
     public static final Map<Identifier, Item> ENTRIES = new LinkedHashMap<>();
 
     /**
@@ -22,13 +20,11 @@ public class TwoModelsItemRegistry {
      *
      * @param items items to be registered
      */
-
     public static void register(Item... items) {
         for(Item item : items) {
             Identifier id = Registry.ITEM.getId(item);
             ENTRIES.put(id, item);
         }
     }
-
 
 }

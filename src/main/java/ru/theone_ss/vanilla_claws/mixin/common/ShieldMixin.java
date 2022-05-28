@@ -16,8 +16,8 @@ import ru.theone_ss.vanilla_claws.item.ClawsItem;
 public abstract class ShieldMixin {
 
     @Inject(method = "use", at = @At("HEAD"), cancellable = true)
-    void use(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<TypedActionResult<ItemStack>> cir){
-        if(user.getStackInHand(Hand.MAIN_HAND).getItem()instanceof ClawsItem){
+    void use(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<TypedActionResult<ItemStack>> cir) {
+        if(user.getStackInHand(Hand.MAIN_HAND).getItem()instanceof ClawsItem) {
             cir.setReturnValue(TypedActionResult.fail(user.getStackInHand(hand)));
         }
     }

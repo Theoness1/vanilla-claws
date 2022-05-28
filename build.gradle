@@ -22,12 +22,11 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:2.1.1")
 
-	modImplementation "maven.modrinth:winterly:0.6.0"
+	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:2.1.1")
+	modImplementation "maven.modrinth:winterly:0.6.1"
 	modImplementation "dev.emi:trinkets:3.3.1"
 	modImplementation "maven.modrinth:cloth-config:6.2.57+fabric"
-
 
 	modLocalRuntime "maven.modrinth:lazydfu:0.1.2"
 	modLocalRuntime "maven.modrinth:ferrite-core:4.2.0"

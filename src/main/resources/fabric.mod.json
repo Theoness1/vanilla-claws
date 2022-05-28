@@ -4,13 +4,14 @@
   "version": "${version}",
 
   "name": "Vanilla Claws",
-  "description": "Mod adds vanilla style claws",
+  "description": "A mod that adds vanilla-styled claws.",
   "authors": [
-    "Theone_ss and PinkGoosik"
+    "Theone_ss", "PinkGoosik"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/Theoness1/vanilla-claws"
+    "sources": "https://github.com/Theoness1/vanilla-claws",
+    "issues": "https://github.com/Theoness1/vanilla-claws/issues"
   },
 
   "license": "MIT",
@@ -18,21 +19,15 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "ru.theone_ss.vanilla_claws.VanillaClaws"
-    ],
-    "client": [
-      "ru.theone_ss.vanilla_claws.client.VanillaClawsClient"
-    ]
+    "main": ["ru.theone_ss.vanilla_claws.VanillaClaws"],
+    "client": ["ru.theone_ss.vanilla_claws.client.VanillaClawsClient"]
   },
-  "mixins": [
-    "vanilla_claws.mixins.json"
-  ],
+  "mixins": ["vanilla_claws.mixins.json"],
 
   "depends": {
-    "fabricloader": ">=0.13.3",
+    "fabricloader": "*",
     "fabric": "*",
-    "minecraft": "~1.18.2",
+    "minecraft": ">=1.18.2",
     "java": ">=17"
   }
 }
