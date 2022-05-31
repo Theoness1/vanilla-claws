@@ -3,6 +3,8 @@ package ru.theone_ss.vanilla_claws.item;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.LeavesBlock;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -23,6 +25,12 @@ public class ClawsItem extends SwordItem {
         builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Weapon modifier", attackSpeed, EntityAttributeModifier.Operation.ADDITION));
         builder.put(ReachEntityAttributes.ATTACK_RANGE, new EntityAttributeModifier("Weapon modifier", -0.75, EntityAttributeModifier.Operation.ADDITION));
         this.attributeModifiers = builder.build();
+    }
+
+    @Override
+    public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {
+        if(state.getBlock() instanceof LeavesBlock) return 8;
+        return 1;
     }
 
     @Override
