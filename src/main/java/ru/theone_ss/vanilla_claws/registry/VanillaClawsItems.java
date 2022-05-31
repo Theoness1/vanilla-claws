@@ -22,7 +22,7 @@ public class VanillaClawsItems {
     public static final Item DIAMOND_CLAWS = add("diamond_claws", new ClawsItem(VanillaClawsMaterials.DIAMOND, 4, 2, settings()));
     public static final Item IRON_CLAWS = add("iron_claws", new ClawsItem(VanillaClawsMaterials.IRON, 5, 2, settings()));
     public static final Item GOLDEN_CLAWS = add("golden_claws", new ClawsItem(VanillaClawsMaterials.GOLD, 4, 2, settings()));
-    public static final Item COPPER_CLAWS = add("copper_claws", new ClawsItem(VanillaClawsMaterials.COPPER, 3, 2, settings()));
+    public static final Item COPPER_CLAWS = add("copper_claws", new ClawsItem(VanillaClawsMaterials.COPPER, 4, 2, settings()));
     public static final Item STONE_CLAWS = add("stone_claws", new ClawsItem(VanillaClawsMaterials.STONE, 4, 2, settings()));
     public static final Item WOODEN_CLAWS = add("wooden_claws", new ClawsItem(VanillaClawsMaterials.WOOD, 3, 2, settings()));
 
