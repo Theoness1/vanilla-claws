@@ -9,13 +9,23 @@
     "Theone_ss", "PinkGoosik"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://modrinth.com/vanilla-claws",
     "sources": "https://github.com/Theoness1/vanilla-claws",
     "issues": "https://github.com/Theoness1/vanilla-claws/issues"
   },
 
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/DcemWeskeZ",
+        "modmenu.curseforge": "https://curseforge.com/minecraft/mc-mods/vanilla-claws",
+        "modmenu.modrinth": "https://modrinth.com/mod/vanilla-claws"
+      }
+    }
+  },
+
   "license": "MIT",
-  "icon": "assets/vanilla_claws/icon.png",
+  "icon": "assets/vanilla_claws/VanillaClawsIcon.png",
 
   "environment": "*",
   "entrypoints": {
