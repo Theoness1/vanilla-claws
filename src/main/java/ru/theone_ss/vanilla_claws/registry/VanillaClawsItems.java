@@ -10,11 +10,13 @@ import net.minecraft.util.registry.Registry;
 import ru.theone_ss.vanilla_claws.VanillaClaws;
 import ru.theone_ss.vanilla_claws.compat.WinterlyIntegration;
 import ru.theone_ss.vanilla_claws.item.ClawsItem;
+import ru.theone_ss.vanilla_claws.item.CryomarbleClawsItem;
 import ru.theone_ss.vanilla_claws.item.material.VanillaClawsMaterials;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+@SuppressWarnings("unused")
 public class VanillaClawsItems {
     public static final Map<Identifier, Item> ITEMS = new LinkedHashMap<>();
 
@@ -26,7 +28,7 @@ public class VanillaClawsItems {
     public static final Item STONE_CLAWS = add("stone_claws", new ClawsItem(VanillaClawsMaterials.STONE, 4, 2, settings()));
     public static final Item WOODEN_CLAWS = add("wooden_claws", new ClawsItem(VanillaClawsMaterials.WOOD, 3, 2, settings()));
 
-    public static final Item CRYOMARBLE_CLAWS = add("cryomarble_claws", new ClawsItem(material("winterly"), 4, 2, settings("winterly")));
+    public static final Item CRYOMARBLE_CLAWS = add("cryomarble_claws", new CryomarbleClawsItem(material("winterly"), 4, 2, settings("winterly")));
 
     private static ToolMaterial material(String modId) {
         if(FabricLoader.getInstance().isModLoaded(modId)) {

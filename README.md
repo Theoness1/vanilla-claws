@@ -1,1 +1,2 @@
-Mod adds vanilla style claws
+## About
+A mod that adds vanilla-styled claws
