@@ -4,7 +4,6 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Language;
@@ -29,8 +28,8 @@ public class IntegratedClawsItem extends ClawsItem {
         super.appendTooltip(stack, world, tooltip, context);
         if(!isRequiredModInstalled) {
             String text = Language.getInstance().get("tooltip.vanilla_claws.requires_mod");
-            text = text.replaceAll("%", requiredMod.toUpperCase(Locale.ROOT));
-            tooltip.add(new LiteralText(text).formatted(Formatting.GRAY));
+            text = text.replaceAll("%", requiredMod.substring(0, 1).toUpperCase() + requiredMod.substring(1));
+            tooltip.add(Text.of(text).copy().formatted(Formatting.GRAY));
         }
     }
 
