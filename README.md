@@ -1,6 +1,6 @@
 # Banilla Claws
 
-<img align="right" width="64" src="src/main/resources/assets/banilla_hammers/banillahammerpre.png">
+<img align="right" width="64" src="src/main/resources/assets/vanilla_claws/VanillaClawsIcon.png">
 
 [![CurseForge Downloads](https://cf.way2muchnoise.eu/full_629973_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/banilla-claws)
 [![Minecraft Versions](https://cf.way2muchnoise.eu/versions/629973.svg)](https://www.curseforge.com/minecraft/mc-mods/banilla-claws)
