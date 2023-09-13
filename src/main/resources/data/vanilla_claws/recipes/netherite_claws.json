@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smithing",
+  "type": "minecraft:smithing_transform",
   "base": {
     "item": "vanilla_claws:diamond_claws"
   },
@@ -8,5 +8,8 @@
   },
   "result": {
     "item": "vanilla_claws:netherite_claws"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
   }
 }

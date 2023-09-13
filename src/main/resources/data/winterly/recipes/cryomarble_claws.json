@@ -1,12 +1,23 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "vanilla_claws:iron_claws"
-  },
-  "addition": {
-    "item": "winterly:cryomarble"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ici",
+    "LLL",
+    " L "
+  ],
+  "key": {
+    "c": {
+      "item": "winterly:cryomarble"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
   },
   "result": {
-    "item": "vanilla_claws:cryomarble_claws"
+    "item": "vanilla_claws:cryomarble_claws",
+    "count": 1
   }
 }
